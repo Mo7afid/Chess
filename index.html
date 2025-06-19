@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChessX - موقع الشطرنج</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+</head>
+<body>
+  <!-- رأس الموقع -->
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">ChessX</h1>
+      <nav>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#play">العب الآن</a></li>
+          <li><a href="#learn">تعلم</a></li>
+          <li><a href="#login">تسجيل الدخول</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>  <!-- بانر ترحيبي -->  <section class="hero">
+    <div class="container">
+      <h2>أهلاً بك في ChessX</h2>
+      <p>العب الشطرنج مباشرة مع أصدقائك أو ضد الحاسوب</p>
+      <a href="#play" class="btn-primary">ابدأ اللعب</a>
+    </div>
+  </section>  <!-- قسم اللعب -->  <section id="play" class="section">
+    <div class="container">
+      <h3>رقعة الشطرنج</h3>
+      <div id="board" style="width: 480px; margin: auto;"></div>
+      <div class="controls">
+        <button onclick="startNewGame()">مباراة جديدة</button>
+        <button onclick="undo()">تراجع</button>
+      </div>
+      <div id="status">جاهز للعب...</div>
+    </div>
+  </section>  <!-- قسم التعلم -->  <section id="learn" class="section">
+    <div class="container">
+      <h3>تعلم الشطرنج</h3>
+      <p>نصائح للمبتدئين، openings، استراتيجيات نهاية اللعب وغيرها.</p>
+      <ul>
+        <li>قواعد اللعبة الأساسية</li>
+        <li>افتتاحيات شهيرة</li>
+        <li>التكتيك والدفاع</li>
+      </ul>
+    </div>
+  </section>  <!-- تسجيل الدخول -->  <section id="login" class="section">
+    <div class="container login-container">
+      <h3>تسجيل الدخول</h3>
+      <form>
+        <label>البريد الإلكتروني:</label>
+        <input type="email" required>
+        <label>كلمة المرور:</label>
+        <input type="password" required>
+        <button type="submit">دخول</button>
+      </form>
+    </div>
+  </section>  <!-- تذييل -->  <footer>
+    <div class="container">
+      <p>&copy; 2025 ChessX. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>  <!-- سكربت اللعب -->  <script src="script.js"></script></body>
+</html>
